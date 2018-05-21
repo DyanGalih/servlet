@@ -20,7 +20,7 @@ public class ProfileServlet extends HttpServlet {
             out.print("Hello, "+name+" Welcome to Profile");
         }
         else{
-            out.print("Please login first");
+            out.print("<h1>Please login first</h1>");
             request.getRequestDispatcher("login.html").include(request, response);
         }
         out.close();
